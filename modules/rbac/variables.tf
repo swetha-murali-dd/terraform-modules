@@ -1,20 +1,13 @@
-variable "datacenter" {
-    type = string
-    description = "datacenter"
-}
-
-variable "flask_migrated" {
-    type = bool
-    description = "flask_migrated"
-    default = false
+variable "endpoints" {
+    type = list
+    description = "endpoints"
 }
 
 variable "env" {
     type = string
     description = "env"
 }
-
-variable "rbac_endpoints" {
+variable "datacenters" {
     type = list
-    description = "endpoints"
+    description = "datacenters"
 }
